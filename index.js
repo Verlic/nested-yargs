@@ -246,6 +246,10 @@ Cli.run = function (command, yargs) {
     return argv;
 };
 
+Cli.parse = function(args) {
+  return Yargs.parse(args);
+}
+
 Cli.usageError = function (message, data) {
     var error = new Error(message ? message : undefined);
 
